@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moaaz Eldeep | AI & Machine Learning Engineer | Data Analyst</title>
+  <meta name="description" content="Portfolio of Moaaz Eldeep, a fourth-year Artificial Intelligence student specializing in Machine Learning, Data Analysis, NLP, Big Data, and intelligent solutions.">
+  <meta name="author" content="Moaaz Eldeep">
+  <meta name="theme-color" content="#050816">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moaaz Eldeep | AI & Machine Learning Engineer | Data Analyst">
+  <meta property="og:description" content="Portfolio of Moaaz Eldeep, a fourth-year Artificial Intelligence student specializing in Machine Learning, Data Analysis, NLP, Big Data, and intelligent solutions.">
+  <meta property="og:image" content="assets/images/profile.png">
+  <meta property="og:site_name" content="Moaaz.Dev">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moaaz Eldeep | AI & Machine Learning Engineer | Data Analyst">
+  <meta name="twitter:description" content="Portfolio of Moaaz Eldeep, a fourth-year Artificial Intelligence student specializing in Machine Learning, Data Analysis, NLP, Big Data, and intelligent solutions.">
+  <meta name="twitter:image" content="assets/images/profile.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-bg__aurora"></div>
+    <div class="site-bg__grid"></div>
+    <span class="site-bg__orb site-bg__orb--a"></span>
+    <span class="site-bg__orb site-bg__orb--b"></span>
+    <span class="site-bg__orb site-bg__orb--c"></span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgress"></div>
+  </div>
+
+  <div class="cursor" id="cursor" hidden>
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+    <span class="cursor__label" id="cursorLabel"></span>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <img src="assets/images/logo.svg" alt="" class="loader__logo" width="56" height="56">
+    <p class="loader__brand">Moaaz.Dev</p>
+    <p class="loader__status" id="loaderStatus">Initializing...</p>
+    <div class="loader__track" aria-hidden="true">
+      <div class="loader__fill" id="loaderFill"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#home" class="brand" aria-label="Moaaz.Dev home">
+        <img src="assets/images/logo.svg" alt="Moaaz.Dev logo" class="brand__logo" width="40" height="40">
+        <span class="brand__text">Moaaz.Dev</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--sm btn--primary magnetic header__cta">Let's Talk</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" data-section>
+      <div class="hero__bg" data-parallax data-speed="0.02" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="orb orb--one" data-parallax data-speed="0.05"></div>
+        <div class="orb orb--two" data-parallax data-speed="0.06"></div>
+        <div class="hero__shapes" data-parallax data-speed="0.1">
+          <span class="shape shape--ring"></span>
+          <span class="shape shape--line"></span>
+        </div>
+        <div class="hero__particles" id="heroParticles" data-parallax data-speed="0.14"></div>
+      </div>
+
+      <div class="container hero__layout">
+        <div class="hero__copy" data-parallax data-speed="0.02">
+          <p class="hero__eyebrow reveal-hero">Hello, I'm</p>
+          <h1 class="hero__name reveal-hero">Moaaz Eldeep</h1>
+          <p class="hero__headline reveal-hero">Building Intelligent Solutions with AI, Machine Learning &amp; Data</p>
+          <p class="hero__roles reveal-hero">
+            <span class="typewriter" id="typewriter" data-roles="AI &amp; Machine Learning Engineer,Data Analyst,Data Scientist"></span><span class="typewriter__cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__intro reveal-hero">Fourth-year Artificial Intelligence student passionate about transforming data into intelligent solutions through Machine Learning, Data Analysis, NLP, and Big Data technologies.</p>
+          <div class="hero__actions reveal-hero">
+            <a href="#projects" class="btn btn--primary magnetic">View My Work</a>
+            <!-- Place CV PDF at: assets/cv/Moaaz-Eldeep-CV.pdf -->
+            <a href="assets/cv/Moaaz-Eldeep-CV.pdf" class="btn btn--ghost magnetic" download>Download CV</a>
+            <a href="#contact" class="btn btn--outline magnetic">Get In Touch</a>
+          </div>
+          <div class="social reveal-hero" aria-label="Social links">
+            <a href="https://github.com/eng-Mo3aZzz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85.01 1.71.12 2.51.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .26.18.59.69.48A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/moaazzmohamed/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Z"/></svg>
+            </a>
+            <a href="mailto:moaaz.aiengineer@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-parallax data-speed="0.06">
+          <div class="portrait">
+            <div class="portrait__glow" aria-hidden="true"></div>
+            <span class="portrait__ring" aria-hidden="true"></span>
+            <div class="portrait__frame">
+              <img src="assets/images/profile.png" alt="Professional portrait of Moaaz Eldeep" width="520" height="640" fetchpriority="high">
+            </div>
+
+            <div class="portrait__orbit" aria-hidden="true">
+              <span class="orbit-item" style="left:100%; top:50%;">
+                <span class="orbit-item__icon" title="AI / Neural Networks">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="5" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/><circle cx="19" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.7 7.2 10 11m4 1 3.3 3.8M6.7 16.8 10 13m4-1 3.3-3.8" stroke="currentColor" stroke-width="1.3"/></svg>
+                </span>
+              </span>
+              <span class="orbit-item" style="left:75%; top:93.3%;">
+                <span class="orbit-item__icon" title="Data / Databases">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><ellipse cx="12" cy="5.5" rx="7" ry="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 5.5v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6M5 11.5v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </span>
+              </span>
+              <span class="orbit-item" style="left:25%; top:93.3%;">
+                <span class="orbit-item__icon" title="Cloud Infrastructure">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 18h10a4 4 0 0 0 .6-7.96A5.5 5.5 0 0 0 7.1 9.5 4 4 0 0 0 7 18Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </span>
+              </span>
+              <span class="orbit-item" style="left:0%; top:50%;">
+                <span class="orbit-item__icon" title="Programming">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path d="m9 8-4 4 4 4m6-8 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </span>
+              <span class="orbit-item" style="left:25%; top:6.7%;">
+                <span class="orbit-item__icon" title="Data Analysis">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 19V10m6.5 9V5m6.5 14v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </span>
+              </span>
+              <span class="orbit-item" style="left:75%; top:6.7%;">
+                <span class="orbit-item__icon" title="Engineering">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><rect x="8" y="8" width="8" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+        <span>Scroll</span>
+        <span class="scroll-hint__line"></span>
+      </a>
+    </section>
+
+    <section class="section about" id="about" data-section>
+      <div class="section__glow" data-about-layer="bg" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">01 — Profile</p>
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">A fourth-year Artificial Intelligence student building practical expertise through focused study and applied work.</p>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__media reveal" data-about-layer="profile">
+            <div class="about__photo">
+              <img src="assets/images/profile.png" alt="Moaaz Eldeep" width="420" height="520" loading="lazy">
+            </div>
+            <span class="about__deco" data-about-layer="deco" aria-hidden="true"></span>
+          </div>
+
+          <div class="about__content" data-about-layer="text">
+            <p class="reveal">I am a Fourth-Year Artificial Intelligence student at Zagazig University, Faculty of Computers and Information. I am developing practical expertise in Machine Learning, Data Analysis, Natural Language Processing, Power BI, and Big Data.</p>
+            <p class="reveal">My focus is continuous learning and applying what I study to real problems — turning datasets into insights and building intelligent solutions that are clear, useful, and technically sound.</p>
+            <ul class="interest-pills reveal">
+              <li>Machine Learning</li>
+              <li>Data Analysis</li>
+              <li>NLP</li>
+              <li>Power BI</li>
+              <li>Big Data</li>
+            </ul>
+            <dl class="info-card reveal">
+              <div><dt>Name</dt><dd>Moaaz Eldeep</dd></div>
+              <div><dt>University</dt><dd>Zagazig University</dd></div>
+              <div><dt>Faculty</dt><dd>Faculty of Computers and Information</dd></div>
+              <div><dt>Specialization</dt><dd>Artificial Intelligence</dd></div>
+              <div><dt>Academic Level</dt><dd>Fourth Year</dd></div>
+              <div><dt>Started</dt><dd>2023</dd></div>
+              <div class="info-card__full"><dt>Focus</dt><dd>AI, Machine Learning &amp; Data</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">02 — Academic Path</p>
+          <h2 class="section__title">Education</h2>
+          <p class="section__lead">Formal training in Artificial Intelligence at Zagazig University.</p>
+        </header>
+
+        <div class="timeline" data-timeline>
+          <div class="timeline__line" aria-hidden="true"><span class="timeline__progress"></span></div>
+          <article class="timeline__item reveal">
+            <div class="timeline__node" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 8.75L4.74 8 12 4.25 19.26 8 12 11.75ZM5 13.18v3.32L12 21l7-4.5v-3.32L12 17l-7-3.82Z"/></svg>
+              </span>
+              <p class="timeline__meta">2023 — Present · Fourth Year</p>
+              <h3>Zagazig University</h3>
+              <p class="timeline__org">Faculty of Computers and Information</p>
+              <p>Bachelor-level studies in <strong>Artificial Intelligence</strong>, with growing focus on Machine Learning, Data Analysis, NLP, Power BI, and Big Data.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="experience" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">03 — Practice</p>
+          <h2 class="section__title">Internship &amp; Training Experience</h2>
+          <p class="section__lead">Hands-on training programs and practical experience — listed only where they are real.</p>
+        </header>
+
+        <div class="timeline timeline--experience" data-timeline>
+          <div class="timeline__line" aria-hidden="true"><span class="timeline__progress"></span></div>
+          <article class="timeline__item reveal">
+            <div class="timeline__node" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="chip">Training</span>
+              <p class="timeline__meta">1.5 months · 2026</p>
+              <h3>NTI</h3>
+              <p class="timeline__org">National Telecommunication Institute — Artificial Intelligence (Machine Learning)</p>
+              <p>Developed practical knowledge of Artificial Intelligence applications and Data Analysis. Built and evaluated Machine Learning models through practical training.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__node" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="chip">Training / Internship</span>
+              <p class="timeline__meta">1.5 months · 2026</p>
+              <h3>Huawei ICT Academy</h3>
+              <p class="timeline__org">Big Data</p>
+              <p>Studied Big Data concepts and tools for large-scale data processing and analysis. Explored Huawei technology solutions and the integration of Big Data systems with AI applications.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__node" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="chip">Internship / Training</span>
+              <p class="timeline__meta">6 months · 2026</p>
+              <h3>DEPI</h3>
+              <p class="timeline__org">Digital Egypt Pioneers Initiative — Artificial Intelligence Engineering</p>
+              <p>Studied core Artificial Intelligence concepts and Data Analysis. Applied theoretical concepts through practical projects using Python and data analysis tools.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">04 — Credentials</p>
+          <h2 class="section__title">Certifications</h2>
+          <p class="section__lead">Verified course completions and credentials. Empty fields stay hidden — authenticity over decoration.</p>
+        </header>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">05 — Toolkit</p>
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lead">Technologies I work with across programming, data, machine learning, AI, and Big Data.</p>
+        </header>
+        <div class="skills" id="skillsRoot"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">06 — Selected Work</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__lead">Applied machine learning work, documented with real repositories and demos.</p>
+        </header>
+        <div class="filters" id="projectFilters" hidden></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="testimonials" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">07 — Voice</p>
+          <h2 class="section__title">Testimonials</h2>
+          <p class="section__lead">What mentors and collaborators from training programs have said.</p>
+        </header>
+        <!-- TODO: replace with real testimonials from mentors, trainers, and collaborators once available -->
+        <div class="testimonial-grid">
+          <article class="testimonial-card interactive-card reveal" data-mouse-effect="subtle">
+            <p class="testimonial-card__quote">"Moaaz showed real dedication during training — he asks the right questions and doesn't stop at a working model, he wants to understand why it works."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">MT</span>
+              <div>
+                <strong>Training Mentor</strong>
+                <span>AI &amp; Data Analysis Program</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card interactive-card reveal" data-mouse-effect="subtle">
+            <p class="testimonial-card__quote">"Reliable teammate on group projects — clear communicator, careful with data, and always willing to walk others through his approach."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">TP</span>
+              <div>
+                <strong>Fellow Trainee</strong>
+                <span>Machine Learning Cohort</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card interactive-card reveal" data-mouse-effect="subtle">
+            <p class="testimonial-card__quote">"His grasp of the full pipeline — from cleaning messy data to evaluating a model properly — is well ahead of where most students are at this stage."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">IC</span>
+              <div>
+                <strong>Program Instructor</strong>
+                <span>Big Data Training</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" data-section>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__index">08 — Offer</p>
+          <h2 class="section__title">Services &amp; Solutions</h2>
+          <p class="section__lead">Areas of expertise I am actively developing — practical, honest, and focused on useful outcomes.</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M3 13h8V3H3v10Zm0 8h8v-6H3v6Zm10 0h8V11h-8v10Zm0-18v6h8V3h-8Z"/></svg>
+            </span>
+            <h3>Data Analysis</h3>
+            <p>Turning raw data into meaningful insights through cleaning, exploration, visualization, and analysis.</p>
+          </article>
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2 2 7v2h20V7L12 2Zm-7 9v7h2v-7H5Zm6 0v7h2v-7h-2Zm6 0v7h2v-7h-2ZM3 20v2h18v-2H3Z"/></svg>
+            </span>
+            <h3>Machine Learning</h3>
+            <p>Building practical machine learning solutions for prediction and classification problems.</p>
+          </article>
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7Zm-2 18h4v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1Z"/></svg>
+            </span>
+            <h3>AI Solutions</h3>
+            <p>Developing intelligent solutions using AI and machine learning techniques.</p>
+          </article>
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 4h16v2H4V4Zm0 4h10v2H4V8Zm0 4h16v2H4v-2Zm0 4h10v2H4v-2Zm0 4h16v2H4v-2Z"/></svg>
+            </span>
+            <h3>NLP</h3>
+            <p>Working with text data and exploring Natural Language Processing techniques.</p>
+          </article>
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 19h16v2H4v-2Zm0-2 5-7 4 5.5L16 11l4 6H4Z"/></svg>
+            </span>
+            <h3>Data Visualization</h3>
+            <p>Creating clear and informative visualizations and dashboards.</p>
+          </article>
+          <article class="service-card interactive-card reveal" data-mouse-effect="light">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 6h6v4H4V6Zm10 0h6v4h-6V6ZM4 14h6v4H4v-4Zm10 0h6v4h-6v-4Z"/></svg>
+            </span>
+            <h3>Big Data</h3>
+            <p>Working with big data technologies and distributed data processing concepts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact" data-section>
+      <div class="container contact">
+        <header class="section__head reveal">
+          <p class="section__index">09 — Connect</p>
+          <h2 class="section__title">Let's Build Something Intelligent</h2>
+          <p class="section__lead">Have a project, idea, or opportunity? Let's connect and explore how AI and data can turn ideas into practical solutions.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__methods reveal">
+            <a class="contact-method" href="mailto:moaaz.aiengineer@gmail.com">
+              <strong>Email</strong>
+              <span>moaaz.aiengineer@gmail.com</span>
+            </a>
+            <a class="contact-method" href="https://www.linkedin.com/in/moaazzmohamed/" target="_blank" rel="noopener noreferrer">
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/moaazzmohamed</span>
+            </a>
+            <a class="contact-method" href="https://github.com/eng-Mo3aZzz" target="_blank" rel="noopener noreferrer">
+              <strong>GitHub</strong>
+              <span>github.com/eng-Mo3aZzz</span>
+            </a>
+            <a class="contact-method" href="https://wa.me/201061861640" target="_blank" rel="noopener noreferrer">
+              <strong>WhatsApp</strong>
+              <span>+20 106 186 1640</span>
+            </a>
+            <a class="contact-method" href="#contact">
+              <strong>Location</strong>
+              <span>Sharkia, Egypt</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <p class="form-note">This form opens your email client. No data is sent to a server.</p>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error" data-error-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required>
+              <span class="field__error" data-error-for="subject"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="field__error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary magnetic">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="brand">
+          <img src="assets/images/logo.svg" alt="Moaaz.Dev logo" width="36" height="36">
+          <span>Moaaz.Dev</span>
+        </a>
+        <p>Building Intelligent Solutions with AI, Machine Learning &amp; Data.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/eng-Mo3aZzz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/moaazzmohamed/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:moaaz.aiengineer@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer__copy">
+      <p>© 2026 Moaaz Eldeep. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="modal__close" type="button" data-modal-close aria-label="Close dialog">&times;</button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
