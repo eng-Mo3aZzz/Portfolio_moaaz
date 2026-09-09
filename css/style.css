@@ -819,9 +819,8 @@ body.cursor-on textarea {
   height: 100%;
   object-fit: cover;
   object-position: center 8%;
-  transform: scale(1.35);
+  transform: scale(1.4);
 }
-
 .portrait__orbit {
   position: absolute;
   inset: 0;
