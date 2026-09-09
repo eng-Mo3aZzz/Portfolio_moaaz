@@ -805,7 +805,7 @@ body.cursor-on textarea {
 
 .portrait__frame {
   position: absolute;
-  inset: 15%;
+  inset: 7%;
   border-radius: 50%;
   overflow: hidden;
   border: 12px solid rgba(248, 250, 252, 0.94);
